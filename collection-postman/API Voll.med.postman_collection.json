@@ -10,87 +10,137 @@
 			"name": "Requisições",
 			"item": [
 				{
-					"name": "Cadastro",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n\"nome\": \"Carla Azevedo\",\r\n\"email\": \"carla.azevedo@voll.med\",\r\n\"telefone\": \"47999998888\",\r\n\"crm\": \"888777\",\r\n\"especialidade\": \"CARDIOLOGIA\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua 1\",\r\n    \"bairro\": \"bairro\",\r\n    \"cep\": \"12345678\",\r\n    \"cidade\": \"Brasilia\",\r\n    \"uf\": \"DF\",\r\n    \"numero\": \"250\",\r\n    \"complemento\": \"SALA 01\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "Medicos",
+					"item": [
+						{
+							"name": "Cadastro de Medicos",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nome\": \"Carla Azevedo\",\r\n\"email\": \"carla.azevedo@voll.med\",\r\n\"telefone\": \"47999998888\",\r\n\"crm\": \"888777\",\r\n\"especialidade\": \"CARDIOLOGIA\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua 1\",\r\n    \"bairro\": \"bairro\",\r\n    \"cep\": \"12345678\",\r\n    \"cidade\": \"Brasilia\",\r\n    \"uf\": \"DF\",\r\n    \"numero\": \"250\",\r\n    \"complemento\": \"SALA 01\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/medicos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"medicos"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:8080/medicos",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"medicos"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Listagem de Medicos",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/medicos",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"medicos"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Atualizar Medico",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"João Carlos da Silva\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+						{
+							"name": "Listagem de Medicos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/medicos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"medicos"
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:8080/medicos",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"medicos"
-							]
+						{
+							"name": "Atualizar Medico",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"João Carlos da Silva\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/medicos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"medicos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Excluir Medico",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/medicos/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"medicos",
+										"2"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "Excluir Medico",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
+					"name": "Pacientes",
+					"item": [
+						{
+							"name": "Cadastro de Pacientes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nome\": \"Paulo Ferreira\",\r\n\"email\": \"pauloferreira@gmail.com\",\r\n\"telefone\": \"47912124545\",\r\n\"cpf\": \"98765432100\",\r\n\"endereco\": {\r\n    \"logradouro\": \"rua XV\",\r\n    \"bairro\": \"centro\",\r\n    \"cep\": \"12345678\",\r\n    \"cidade\": \"Brasilia\",\r\n    \"uf\": \"DF\",\r\n    \"numero\": \"200\",\r\n    \"complemento\": \"\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pacientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
