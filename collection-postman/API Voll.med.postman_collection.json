@@ -139,6 +139,25 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Listagem de Pacientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/pacientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				}
