@@ -158,6 +158,34 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Atualizar Paciente",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"Paulo Dias Ferreira\",\r\n    \"telefone\": \"47912124545\",\r\n    \"endereco\": {\r\n    \"logradouro\": \"Rua Jacarandá\",\r\n    \"bairro\": \"centro\",\r\n    \"cep\": \"11122233\",\r\n    \"cidade\": \"Brasilia\",\r\n    \"uf\": \"DF\",\r\n    \"numero\": \"275\",\r\n    \"complemento\": \"\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pacientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				}
